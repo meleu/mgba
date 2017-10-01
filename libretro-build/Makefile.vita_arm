@@ -41,7 +41,7 @@ LIBEXT = .vita_arm.a
 
 STATIC_LINKING = 1
 platform       = vita
-PLATDEFS       = -DVITA
+PLATDEFS       = -DVITA -DCC_RESAMPLER -DPSP2 -std=c99
 PLATCFLAGS     = -ftree-vectorize -mfloat-abi=hard -ffast-math -fsingle-precision-constant -funroll-loops -fno-short-enums
 PLATCXXFLAGS   = -ftree-vectorize -mfloat-abi=hard -ffast-math -fsingle-precision-constant -funroll-loops -fno-short-enums
 PLATLDFLAGS    = -shared -lm -mthumb -mcpu=cortex-a9 -mfloat-abi=hard
